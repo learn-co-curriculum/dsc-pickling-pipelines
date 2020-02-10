@@ -90,8 +90,8 @@ It will give you a warning message for the reason mentioned above (it's not a be
 
 To test that your Flask app can run without errors, test out running it:
 ```
-export FLASK_ENV=development
-env FLASK_APP=app.py flask run
+export FLASK_ENV=production
+python3 app.py
 ```
 
 You won't be able to test it in a browser until the network settings are configured, though!
