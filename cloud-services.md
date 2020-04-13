@@ -50,6 +50,8 @@ These tools are designed for uploads of raw files, e.g. folders full of images, 
 
 They each cost about 2-5 cents per GB per month.  AWS S3 is the oldest and tends to have the most integration support with other platforms, although you may need to use Google storage if you're using other Google products or Azure storage if you're using other Azure products.
 
+Let's look at the [demo notebook](/s3_buckets.ipynb)
+
 ### Cloud Databases
 
 If you want to deploy a website where new information gets saved (what kinds of queries users perform, user ratings of the quality of predictions, etc.) then you need a cloud database.  These work roughly the same as a database running on your computer.
