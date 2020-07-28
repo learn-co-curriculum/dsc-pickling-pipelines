@@ -1,13 +1,9 @@
 # Deployment
 
-## Students Will Be Able To
- - [] Explain the purpose of deploying a machine learning model
- - [] Review the purpose of [pickling a model](/pickling.ipynb)
- - [] Understand the basics of some popular deployment techniques
-    - Full-stack web application
-    - Cloud function
-    - ML-specific deployment
- - [] Start formulating a deployment plan for their business case
+This markdown file contains resources for three different techniques for deploying a machine learning model:
+1. Full-stack web application
+2. Cloud function
+3. ML-specific deployment
 
 ## Full-Stack Web Application Example: Flask
 Flask means developing a full-stack web application.  It follows a model-view-controller (MVC) pattern and requires that you sometimes have to follow a "convention over configuration" pattern and put certain files in certain folders.

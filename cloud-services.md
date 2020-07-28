@@ -2,11 +2,9 @@
 
 <img src="https://nerds.net/wp-content/uploads/2018/02/cloud-computer-reality-750x646.jpg" width="400px">
 
-## Students Will Be Able To
- - [ ] Explain the general concept of "the cloud"
- - [ ] Understand the cases where _hardware acceleration_ is useful
- - [ ] Understand the cases where _cloud storage_ is useful
- - [ ] Explain the difference between a "cloud database" and a "storage bucket"
+This markdown file covers two main topics:
+1. Hardware acceleration
+2. Cloud storage
 
 ## Hardware Acceleration
 
@@ -25,14 +23,17 @@ There is a lot of overlap between these services and the services listed on the 
  - [AWS EC2](https://aws.amazon.com/blogs/machine-learning/train-deep-learning-models-on-gpus-using-amazon-ec2-spot-instances/)
  - [Google Cloud Platform](https://cloud.google.com/ml-engine/docs/using-gpus)
  - [IBM Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml_dlaas_gpus.html)
- - [AWS Sagemaker](https://aws.amazon.com/machine-learning/accelerate-machine-learning-P3/)
  - [Azure VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-gpu)
 
 There are also some cloud IDEs with GPUs, where you can run Jupyter Notebook code:
 
+ - [AWS Sagemaker](https://aws.amazon.com/machine-learning/accelerate-machine-learning-P3/) (there are labs in Learn introducing Sagemaker — it is fairly fast and easy to use, but can get expensive quickly with large datasets)
  - [Databricks Community Edition](https://community.cloud.databricks.com/)
  - [Google Colab](https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c)
  - [Kaggle kernels](https://www.kaggle.com/dansbecker/running-kaggle-kernels-with-a-gpu)
+
+
+Because there is a GPU available in the free tier, Google Colab is the most popular of these tools for our students. [Here](https://medium.com/@sam.bbmgmt/integrating-google-drive-colab-with-github-bffaca97eb5b) is a blog post from a former student explaining how to use the file system!
 
 ## Cloud Storage
 
