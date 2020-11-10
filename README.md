@@ -1,6 +1,6 @@
 # Cloud Services and Deployment
 
-<img src="https://imelgrat.me/wp-content/uploads/2018/06/Cloud-Delivery-Models.png" width="700px">
+<img src="https://cdn.mos.cms.futurecdn.net/pkYe3wfka75VbChmzeXpiN-970-80.jpg.webp" width="700px">
 
 ## Students Will Be Able To
 

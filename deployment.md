@@ -6,12 +6,12 @@ This markdown file contains resources for three different techniques for deployi
 3. ML-specific deployment
 
 ## Full-Stack Web Application Example: Flask
-Flask means developing a full-stack web application.  It follows a model-view-controller (MVC) pattern and requires that you sometimes have to follow a "convention over configuration" pattern and put certain files in certain folders.
+Flask means developing a full-stack web application.  It follows a model-view-controller (MVC) pattern and requires that you sometimes have to follow a "convention over configuration" pattern and put certain files in certain folders, though [flask blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/) do offer a great deal of customization.
 
 There are two main ways I recommend deploying a Flask app: [Heroku](https://devcenter.heroku.com/articles/deploying-python), or [AWS EC2](https://www.codementor.io/dushyantbgs/deploying-a-flask-application-to-aws-gnva38cf0).  The main difference is that Heroku uses "dynos", a type of container that gets fully re-created when the site is "woken up" based on certain config files it finds in a GitHub repo.  EC2 is more like a "real" computer, where you can SSH in and download things, log out, log back in, and those things will still be there.  EC2 gives you more configuration capabilities and more computational power, but also requires more setup than Heroku.
 
 ### Pricing
-[Heroku free tier](https://www.heroku.com/pricing) allows one web app for free.  [AWS free tier](https://aws.amazon.com/ec2/pricing/) allows 750 hours of "micro" level server time per month.
+[Heroku free tier](https://www.heroku.com/pricing) allows 5 web app for free.  [AWS free tier](https://aws.amazon.com/ec2/pricing/) allows 750 hours of "micro" level server time per month.
 
 ### Pros
  - Free
