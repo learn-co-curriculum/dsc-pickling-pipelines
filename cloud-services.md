@@ -27,7 +27,7 @@ There is a lot of overlap between these services and the services listed on the 
 
 There are also some cloud IDEs with GPUs, where you can run Jupyter Notebook code:
 
- - [AWS Sagemaker](https://aws.amazon.com/machine-learning/accelerate-machine-learning-P3/) (there are labs in Learn introducing Sagemaker — it is fairly fast and easy to use, but can get expensive quickly with large datasets)
+ - [AWS Sagemaker](https://aws.amazon.com/machine-learning/accelerate-machine-learning-P3/) (there are labs in Cavas introducing Sagemaker — it is fairly fast and easy to use, but can get expensive quickly with large datasets)
  - [Databricks Community Edition](https://community.cloud.databricks.com/)
  - [Google Colab](https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c)
  - [Kaggle kernels](https://www.kaggle.com/dansbecker/running-kaggle-kernels-with-a-gpu)

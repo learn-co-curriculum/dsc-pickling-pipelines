@@ -5,7 +5,7 @@
 ## Students Will Be Able To
 
 ### Review
- - [ ] Recall the concept + procedure of [pickling a model](/pickling.ipynb)
+ - [x] Recall the concept + procedure of [pickling a model](/pickling.ipynb)
 
 ### Cloud Services ([resource list](/cloud-services.md))
  - [ ] Explain the general concept of "the cloud"
