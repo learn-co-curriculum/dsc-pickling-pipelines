@@ -17,7 +17,7 @@ In this lesson you will:
 
 Previously when we covered pickling, we introduced the idea of model ***persistence*** -- essentially that if you serialize a model after training it, you can later load the model and make predictions without wasting time or computational resources re-training the model.
 
-In some contexts, model persistence is all you need. For example, if the end-user of your model is a data scientist with a full Python environment setup, they can load up their own notebook, call `.load` on the model file, and start making predictions.
+In some contexts, model persistence is all you need. For example, if the end-user of your model is a data scientist with a full Python environment setup, they can launch up their own notebook, call `.load` on the model file, and start making predictions.
 
 Model ***deployment*** goes beyond model persistence to allow your model to be used in many more contexts. Here are just a few examples:
 
@@ -310,7 +310,7 @@ pipe.fit(X, y)
 
 Now the pipeline is ready to make predictions on new data!
 
-Let's use an example that is actually from the training data, so we know it should actually be class 0:
+In the example below, we are sending in X values from a record in the training data. We know that the classification *should* be 0, so this is a quick check to make sure that the model works and we are getting the results we expect:
 
 
 ```python
@@ -344,17 +344,11 @@ import joblib
 
 Then we can serialize the pipeline into a file called `model.pkl`.
 
-`.pkl` is a conventional file ending for a pickled scikit-learn model. [This blog post](https://towardsdatascience.com/guide-to-file-formats-for-machine-learning-columnar-training-inferencing-and-the-feature-store-2e0c3d18d4f9) covers many other file formats that you might see that use different libraries.
+(Recall that `.pkl` is a conventional file ending for a pickled scikit-learn model. [This blog post](https://towardsdatascience.com/guide-to-file-formats-for-machine-learning-columnar-training-inferencing-and-the-feature-store-2e0c3d18d4f9) covers many other file formats that you might see that use different libraries.)
 
 
 ```python
 with open("model.pkl", "wb") as f:
-    joblib.dump(pipe, f)
-```
-
-
-```python
-with open("google_cloud_function/model.pkl", "wb") as f:
     joblib.dump(pipe, f)
 ```
 
@@ -450,6 +444,8 @@ def predict(request):
     # Return the result as a string with JSON format
     return json.dumps(result)
 ```
+
+(Unusually for a `.py` file, we don't need to include an `if __name__ == "__main__":` statement in the file. This is due to the particular configuration of Google Cloud Functions, which operations a web server behind the scenes. Instead, if you want to deploy the function, you'll need to configure it in the console so that the `predict` function will be invoked.)
 
 ### Creating Our Requirements File
 
