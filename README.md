@@ -488,7 +488,7 @@ joblib.__version__
 
 #### Creating the File
 
-At the time of this writing, we are using scikit-learn 0.23.2 and joblib 0.17.0. So we create a file called `requirements.txt` containing these lines, with pip-style versions ([documentation here](https://pip.pypa.io/en/stable/reference/requirements-file-format/#requirements-file-format)):
+At the time of this writing, we are using scikit-learn 0.23.2 and joblib 0.17.0. (If you see different numbers there, that means we have updated the environment, so use those numbers instead!) We create a file called `requirements.txt` containing these lines, with pip-style versions ([documentation here](https://pip.pypa.io/en/stable/reference/requirements-file-format/#requirements-file-format)):
 
 ```
 scikit-learn==0.23.2
@@ -515,44 +515,16 @@ That will create an archive called `archive.zip` which can be uploaded following
 
 You will want to specify an executed function of `predict` and also select the checkbox for "Allow unauthenticated invocations" if you want to make a public API.
 
-As of the development of this lesson, we have a public API with this very model! We demonstrate its use below:
-
+Then the code to test out your deployed function would be something like this, where you replace the `url` value with your actual URL.
 
 ```python
 import requests
-```
-
-
-```python
 response = requests.post(
-    url="https://us-central1-dark-garden-341621.cloudfunctions.net/function-1",
+    url="https://<name here>.cloudfunctions.net/function-1",
     json={"sepal_length": 5.1, "sepal_width": 3.5, "petal_length": 1.4, "petal_width": 0.2}
 )
 response
 ```
-
-
-
-
-    <Response [200]>
-
-
-
-If the above cell displays `<Response [200]>`, that means the cloud function is still up and running.
-
-
-```python
-response.json()
-```
-
-
-
-
-    {'predicted_class': 0}
-
-
-
-Look at that! We are getting a prediction from a remote web server, serving a pickled scikit-learn pipeline.
 
 ## Summary
 
